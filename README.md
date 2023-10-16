@@ -53,17 +53,30 @@ node src/emit_log_topic.js red.rabbit Hello
 ```
 
 <p>To receive all the logs:</p>
-<pre class="lang-bash hljs language-bash">node src/receive_logs_topic.js <span class="hljs-string">"#"</span>
-</pre>
+
+``` shell
+node src/receive_logs_topic.js  "#"
+```
+
 <p>To receive all logs from the facility "<span class="code ">kern</span>":</p>
-<pre class="lang-bash hljs language-bash">node src/receive_logs_topic.js <span class="hljs-string">"kern.*"</span>
-</pre>
+
+``` shell
+node src/receive_logs_topic.js "kern.*"
+```
+
 <p>Or if you want to hear only about "<span class="code ">critical</span>" logs:</p>
-<pre class="lang-bash hljs language-bash">node src/receive_logs_topic.js <span class="hljs-string">"*.critical"</span>
-</pre>
+
+``` shell
+node src/receive_logs_topic.js "*.critical" 
+```
+
 <p>You can create multiple bindings:</p>
-<pre class="lang-bash hljs language-bash">node src/receive_logs_topic.js <span class="hljs-string">"kern.*"</span> <span class="hljs-string">"*.critical"</span>
-</pre>
+
+``` shell
+node src/receive_logs_topic.js "kern.*" "*.critical"
+```
+
+
 
 
 
